@@ -66,19 +66,31 @@ const totalSum = computed(() => {
             <form action="">
                 <div class="mb-3">
                     <label for="date" class="form-label">Название</label>
-                    <input type="text" v-model="name" class="form-control" id="name" >
+                    <input type="text" v-model="name" class="form-control" :class="{'is-invalid': !name}" id="name" >
+                    <div class="invalid-feedback">
+                        Заполните пожалуйста название
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label">Дата</label>
-                    <input type="date" v-model="date" class="form-control" id="name" >
+                    <input type="date" v-model="date" class="form-control" :class="{'is-invalid': !date}" id="name" >
+                    <div class="invalid-feedback">
+                        Заполните пожалуйста дату
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label">Количество</label>
-                    <input type="number" v-model="count" class="form-control" id="name" >
+                    <input type="number" v-model="count" class="form-control" :class="{'is-invalid': !count}" id="name" >
+                    <div class="invalid-feedback">
+                        Заполните пожалуйста количество
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label">Цена</label>
-                    <input type="number" v-model="price" class="form-control" id="name" >
+                    <input type="number" v-model="price" class="form-control" :class="{'is-invalid': !price}" id="name" >
+                    <div class="invalid-feedback">
+                        Заполните пожалуйста цену
+                    </div>
                 </div>
                 <div class="text-center mb-3">
                     <button @click="addProduct" type="button" class="btn btn-dark">Добавить</button>
