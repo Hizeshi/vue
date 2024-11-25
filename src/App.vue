@@ -30,8 +30,26 @@
             </form>
         </div>
     </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+        <div class="card-body">
+            <h5 class="card-title">Oppo</h5>
+            <p class="card-text">11.11.2011</p>
+            <p class="card-text">100$</p>
+            <p class="card-text">x444444444</p>
+        </div>
+        <div class="cart-footer text-end">
+            <button type="button" class="btn btn-secondary">Удалить</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 </div>
 
 </template>
 
-р
